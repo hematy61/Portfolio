@@ -28,7 +28,12 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          devMode ? {
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
+          } : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -36,6 +41,9 @@ module.exports = {
               localIdentName: '[local]--[hash:base64:5]',
               sourceMap: true
             }
+          },
+          {
+            loader: 'postcss-loader'
           },
           {
             loader: 'sass-loader'
