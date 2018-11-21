@@ -6,9 +6,15 @@
   "keywords": [],
   "author": "Mo Hemati",
   "license": "ISC",
+  "browserslist": [
+    "cover 97%",
+    "maintained node versions",
+    "not dead"
+  ],
   "scripts": {
     "build": "webpack",
-    "server": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "safari-dev": "webpack-dev-server --host 0.0.0.0 --port 3000"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
