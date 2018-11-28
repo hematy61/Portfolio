@@ -5,7 +5,10 @@ import {
   header_brand,
   header_brand_title,
   header_brand_subtitle,
-  header_nav
+  header_nav,
+  menu_toggle_icon,
+  menu_toggle,
+  menu_screen_off
   } 
   from '../../styles/components/Header.scss';
 
@@ -19,6 +22,15 @@ const Header = () => (
             <h1 className={header_brand_subtitle}>Front-End Web Developer</h1>
           </a>
         </div>
+
+        <input id={menu_toggle} type="checkbox"/>
+        <label htmlFor={menu_toggle} className={menu_toggle_icon}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <label htmlFor={menu_toggle} className={menu_screen_off} ></label>
+
         <div className={header_nav}>
           <a href="#about-me">ABOUT ME</a>
           <a href="#skills">SKILLS</a>
