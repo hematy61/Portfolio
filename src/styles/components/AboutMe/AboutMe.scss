@@ -1,0 +1,43 @@
+@import "../../base/settings.scss";
+
+.about_me_container {
+  // border: 5px solid red;
+  padding: 8rem 0 0 0;
+  // height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.content_frame {
+  border: 0 solid $border-grey;
+  width: 90vw;
+  border-radius: 25px;
+  box-shadow: 0rem 0.125rem 21rem 0rem rgba(0, 0, 0, 0.11);
+  line-height: 3.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #4c4c4c;
+
+  p {
+    padding: 4rem 4rem 0 4rem;
+    text-align: justify;
+  }
+  code {
+    background: #4c4c4c;
+    border-radius: 5px;
+    color: rgb(187, 132, 110);
+    padding: 0.7rem 1rem;
+    
+    span:nth-child(1){
+      color: rgb(73, 184, 162);
+    }
+    span:nth-child(2){
+      color: rgb(213, 213, 165);
+    }
+    span:nth-child(3){
+      color: rgb(213, 213, 165);
+    }
+  }
+}

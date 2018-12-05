@@ -1,7 +1,8 @@
+@import '../base/settings.scss';
 
 .header {
   background: white;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid $border-grey;
   position: fixed;
   right: 0;
   top: 0;
@@ -135,6 +136,11 @@ input:checked~.menu_toggle_icon span:nth-child(3) {
 #menu_toggle:checked~.menu_screen_off {
   display: block;
 }
+
+/* ------------------------------------------------------------------- */
+/* ----- Media Queries ----------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
 
 @media screen and (min-width: 1024px) {
   .header_content span {
