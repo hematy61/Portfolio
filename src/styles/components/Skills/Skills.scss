@@ -1,0 +1,121 @@
+@import '../../base/settings.scss';
+
+
+.skills_container {
+  // border: 5px solid grey;
+  padding: 8rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.card {
+  border: 0 solid #e2e2e2;
+  border-radius: 25px;
+  box-shadow: 0rem 0.125rem 16rem 0rem rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $body-main-grey;
+  width: 14rem;
+  height: 14rem;
+  text-align: center;
+  margin: 1rem;
+  h3{
+    margin: 1rem 0 0 0;
+  }
+}
+.bouncing_jitter_fix:hover {
+  height: 16rem;
+  overflow: visible;
+  .card {
+    animation: bounce 0.5s cubic-bezier(0, 0.95, 1, 0.85);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+}
+.icon{
+  // border: 5px solid red;
+  width: 40%;
+  border-radius: 5px;
+  fill: #1d516f;
+}
+
+.javascript {
+  fill: #f0db4f;
+}
+
+.react{
+  fill: #62dafa;
+}
+
+.html {
+  fill: #e34f31;
+}
+
+.css {
+  fill: #226fb4;
+}
+
+.redux {
+  fill: #7247b6;
+}
+
+.npm {
+  fill: #c7342a;
+}
+
+.git {
+  fill: #e24c31;
+}
+
+.github {
+  fill: #161415;
+}
+
+.webpack {
+  fill: #87cef3;
+}
+.babel {
+  width: 12rem;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
+@media (min-width: 1024px){
+  
+  .card{
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .bouncing_jitter_fix:hover {
+    height: 22rem;
+    overflow: visible;
+    .card {
+      animation: bounce 0.5s cubic-bezier(0, 0.95, 1, 0.85);
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+  }
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(0, -20px, 0);
+    }
+  }
+}

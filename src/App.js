@@ -5,6 +5,7 @@ import './styles/base/base.scss';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import AboutMe from './components/AboutMe/AboutMe';
+import Skills from './components/Skills/Skills';
 
 
 const App = () => (
@@ -12,7 +13,7 @@ const App = () => (
     <Header />
     <Intro />
     <AboutMe />
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
+    <Skills />
     <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
     <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
     <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
