@@ -62,6 +62,19 @@
     width: 4rem;
     position: absolute;
     bottom: 0;
+    animation: bounce 1s cubic-bezier(0, 0.95, 1, 0.85);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -20px, 0);
   }
 }
 .fullscreen_background {

@@ -9,6 +9,8 @@ import {
 } from '../../styles/components/Intro/Intro.scss';
 import background from './background.png';
 import goDown from "./down.svg";
+import { Link } from "react-scroll";
+
 
 const Intro = () => (
   <div>
@@ -25,9 +27,14 @@ const Intro = () => (
           <h1>Mo Hemati</h1>
         </div>
         <div className={intro_scroll}>
-          <a href="/#about-me">
-            <img src={goDown} alt="go down to about me"/>
-          </a>
+          <Link
+                to = "about-me"
+                spy={true} 
+                smooth={true} 
+                duration={500}
+              >
+              <img src={goDown} alt="go down to about me"/>
+          </Link>
         </div>
         <img src={background} className={fullscreen_background} alt="Mo Hemati background image"/>
       </div>

@@ -119,7 +119,7 @@ input:checked~.menu_toggle_icon span:nth-child(3) {
 /* ------------------------------------------------------------------- */
 
 
-// menu closing designing -- it's a layer that user can't see it on opened menu
+// menu closing design -- it's a layer that user can't see it on opened menu
 .menu_screen_off {
   display: none;
   position: fixed;
@@ -170,5 +170,11 @@ input:checked~.menu_toggle_icon span:nth-child(3) {
       padding: 2rem 1rem;
       // border: 1px solid blue;
     }
+  }
+  .activeLink {
+    font-weight: 900;
+  }
+  a.activeLink{
+    color: #1d516f;
   }
 }

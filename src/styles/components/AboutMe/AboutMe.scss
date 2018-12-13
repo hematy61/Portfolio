@@ -39,3 +39,15 @@
     }
   }
 }
+
+@media (min-width: 1024px){
+  .content_frame{
+    font-size: 2rem;
+
+    p {
+      padding: 2rem 4rem 0 4rem;
+      text-align: left;
+    }
+  }
+  
+}
