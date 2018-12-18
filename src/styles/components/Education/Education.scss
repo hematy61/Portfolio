@@ -1,0 +1,107 @@
+@import '../../base/settings.scss';
+
+
+.education_container {
+  // border: 5px solid grey;
+  padding: 8rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.education_card{
+  border: 2px solid #fff;
+  border-radius: 25px;
+  box-shadow: 0rem 0.125rem 21rem 0rem rgba(0, 0, 0, 0.11);
+  line-height: 3.5rem;
+  color: $body-main-grey;
+  padding: 4rem 1rem;
+  width: 100%;
+  height: 100%;
+  max-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+.card_container{
+  width: 34rem;
+  height: 48.8rem;
+  padding: 2px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 27px;
+  margin: 2rem;
+}
+.card_container:hover {
+  background-image: linear-gradient(
+    149deg, 
+    #1d516f, 
+    #215a7c, 
+    #338abc 21%, 
+    #348fc3 38%, 
+    #89c341 69%, 
+    #89c341 81%, 
+    #8cba7b
+  );
+
+}
+.icon {
+  width: 87%;
+  max-width: 270px;
+  height: 38px;
+  background: #E0E0E0;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.university {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 9rem 0 12.4rem 0;
+  }
+  h3 {
+    position: relative;
+    bottom: -4rem;
+    margin: 0;
+    width: 29.75rem;
+  }
+  h5 {
+    position: relative;
+    bottom: -4rem;
+    margin: 0;
+    width: 29.75rem;
+  }
+  p {
+    position: relative;
+    bottom: -4rem;
+    margin: 0;
+    width: 29.75rem;
+  }
+}
+.content {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 1.2rem;
+  }
+  p:nth-of-type(1) {
+    position: absolute;
+    bottom: 1rem;
+    margin: 0;
+    width: 29.75rem;
+  }
+
+  p:nth-of-type(2) {
+    position: absolute;
+    bottom: 4rem;
+    margin: 0;
+    width: 29.75rem;
+  }
+}
