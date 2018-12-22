@@ -13,7 +13,8 @@ import {
   github,
   webpack,
   babel,
-  bouncing_jitter_fix
+  bouncing_jitter_fix,
+  sass
 } from "../../styles/components/Skills/Skills.scss";
 import JavascriptIcon from './JavascriptSVGIcon';
 import ReactIcon from './ReactSVGIcon';
@@ -26,6 +27,8 @@ import WebpackIcon from './WebpackSVGIcon';
 import BabelIcon from './BabelSVGIcon';
 import GitIcon from './GitSVGIcon';
 import YarnIcon from './YarnSVGIcon';
+import SassSVGIcon from './SassSVGIcon';
+import BootstrapSVGIcon from './BootstrapSVGIcon';
 
 
 const Skills = () => (
@@ -63,6 +66,20 @@ const Skills = () => (
       <div className={card} >
         <CSSIcon className={`${icon} ${css}`} />
         <h3>CSS</h3>
+      </div>
+    </div>
+
+    <div className={bouncing_jitter_fix} >
+      <div className={card} >
+        <SassSVGIcon className={`${icon} ${sass}`} />
+        <h3></h3>
+      </div>
+    </div>
+
+    <div className={bouncing_jitter_fix} >
+      <div className={card} >
+        <BootstrapSVGIcon className={`${icon}`} />
+        <h3>Bootstrap</h3>
       </div>
     </div>
 

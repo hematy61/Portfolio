@@ -1,0 +1,52 @@
+@import '../../base/settings.scss';
+
+.projects_container {
+  position: relative;
+  // border: 5px solid grey;
+  padding: 8rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.card {
+  width: 40rem;
+  border: 0px solid #fff;
+  border-radius: 25px;
+  box-shadow: 0rem 0.125rem 21rem 0rem rgba(0, 0, 0, 0.11);
+  line-height: 4.5rem;
+  color: $body-main-grey;
+  background: #fff;
+  padding: 4rem;
+  margin: 2rem;
+}
+
+.card_image_container {
+  position: relative;
+  border: 0 solid black;
+  box-shadow: 0rem 0.125rem 7rem -3rem rgba(0, 0, 0, 1);
+  border-radius: 25px;
+  height: 24.38rem;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+}
+.project_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #80808047;
+  z-index: 10;
+  border-radius: 25px;
+}
+.subtitle {
+  h1 {
+    font-weight: 400;
+  }
+}
