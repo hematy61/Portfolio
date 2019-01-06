@@ -12,9 +12,9 @@
     "not dead"
   ],
   "scripts": {
-    "build": "webpack",
-    "server": "webpack-dev-server",
-    "safari-dev": "webpack-dev-server --host 0.0.0.0 --port 3000"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "safari-dev": "webpack-dev-server --host 0.0.0.0 --port 3000 --config webpack.dev.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -26,6 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.4",
@@ -36,7 +37,8 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.24.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.5"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",

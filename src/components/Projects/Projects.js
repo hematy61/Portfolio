@@ -17,22 +17,29 @@ const Projects = () => (
       </div>
       <div className={subtitle}>
         <h1>My Portfolio</h1>
-        <p>React, Webpack 4, Babel, Autoprefixer, SASS, React Scroll</p>
+        <h4>React, Webpack 4, Babel, Autoprefixer, SASS, React Scroll, React Loadable</h4>
         <p>A responsive design for desktop and mobile</p>
         <p>Mobile first design</p>
-        <p>Using SVGs and code splitting</p>
+        <p>Using SVGs</p>
+        <p>Using 
+          <a 
+            href="https://github.com/jamiebuilds/react-loadable" 
+            target="_blank"
+          > react-loadable
+          </a> to split final Webpack production bundle to small chunks of code
+        </p>
       </div>
     </div>
 
     <div className={card}>
       <div className={card_image_container}>
-        <a href="https://hematy61.github.io/react-tv-package-configurator/">
+        <a href="https://hematy61.github.io/react-tv-package-configurator/" target='_blank' >
           <img src={require('./tv_package_configurator.gif')} alt="tv package configurator website snapshot" />
         </a>
       </div>
       <div className={subtitle}>
         <h1>TV Package Configurator</h1>
-        <p>React ( Create-react-app )</p>
+        <h4>React ( Create-react-app )</h4>
         <p>An internal app for call center representatives to be able to make changes to customers' TV package</p>
       </div>
     </div>

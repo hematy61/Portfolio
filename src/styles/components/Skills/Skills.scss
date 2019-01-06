@@ -27,6 +27,13 @@
   h3{
     margin: 1rem 0 0 0;
   }
+  .bootstrap_big {
+    display: none;
+  }
+
+  .bootstrap_small {
+    display: block;
+  }
 }
 .bouncing_jitter_fix:hover {
   height: 16rem;
@@ -68,6 +75,15 @@
   fill: #7247b6;
 }
 
+.bootstrap {
+  background: #5a4282;
+  fill: #fff;
+  width: 7rem;
+  height: 7rem;
+  padding: 1rem;
+  border-radius: 19px;
+}
+
 .npm {
   fill: #c7342a;
 }
@@ -102,6 +118,13 @@
   .card{
     width: 20rem;
     height: 20rem;
+    .bootstrap_big {
+      display: block;
+    }
+
+    .bootstrap_small {
+      display: none;
+    }
   }
   
   .bouncing_jitter_fix:hover {

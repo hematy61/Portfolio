@@ -5,14 +5,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: './src/App.js',
+  
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
+
   devtool: 'source-map',
   mode: 'development',
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'dsit'),
     port: 8181,
     open: 'google chrome',
     historyApiFallback: true

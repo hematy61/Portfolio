@@ -8,13 +8,16 @@ import {
   html,
   css,
   redux,
+  bootstrap,
   npm,
   git,
   github,
   webpack,
   babel,
   bouncing_jitter_fix,
-  sass
+  sass,
+  bootstrap_big,
+  bootstrap_small
 } from "../../styles/components/Skills/Skills.scss";
 import JavascriptIcon from './JavascriptSVGIcon';
 import ReactIcon from './ReactSVGIcon';
@@ -29,6 +32,7 @@ import GitIcon from './GitSVGIcon';
 import YarnIcon from './YarnSVGIcon';
 import SassSVGIcon from './SassSVGIcon';
 import BootstrapSVGIcon from './BootstrapSVGIcon';
+import BootstrapSVGIconMobile from './BootstrapSVGIconMobile';
 
 
 const Skills = () => (
@@ -78,7 +82,8 @@ const Skills = () => (
 
     <div className={bouncing_jitter_fix} >
       <div className={card} >
-        <BootstrapSVGIcon className={`${icon}`} />
+        <BootstrapSVGIcon className={`${icon} ${bootstrap_big}`} />
+        <BootstrapSVGIconMobile className={`${icon} ${bootstrap} ${bootstrap_small}`}/>
         <h3>Bootstrap</h3>
       </div>
     </div>

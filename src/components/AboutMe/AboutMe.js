@@ -16,8 +16,8 @@ const AboutMe = () => (
         
       </p>
       <p>
-        As a self-taught developer, he has passed a great deal of challenges and still hungry to take more. 
-        He would prefer to stay an all-time junior developer to be open on learning. 
+        As a self-taught developer, he has passed a great deal of challenges and still hungry to learn more. 
+        He is dedicated to learning as it is a must to be a web developer.
       </p>
     </div>
   </section>

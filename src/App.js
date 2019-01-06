@@ -1,29 +1,95 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import loadable from 'react-loadable';
 import 'normalize.css';
 import './styles/base/base.scss';
-import Header from './components/Header/Header';
-import Intro from './components/Intro/Intro';
-import AboutMe from './components/AboutMe/AboutMe';
-import Skills from './components/Skills/Skills';
-import Education from './components/Education/Education';
-import Projects from "./components/Projects/Projects";
 
+const LoadableHeader = loadable({
+  loader: () => import('./components/Header/Header'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+});
 
+const LoadableIntro = loadable({
+  loader: () => import('./components/Intro/Intro'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
+
+const LoadableAboutMe = loadable({
+  loader: () => import('./components/AboutMe/AboutMe'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
+
+const LoadableSkills = loadable({
+  loader: () => import('./components/Skills/Skills'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
+
+const LoadableEducation = loadable({
+  loader: () => import('./components/Education/Education'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
+
+const LoadableProjects = loadable({
+  loader: () => import('./components/Projects/Projects'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
+
+const LoadableContacts = loadable({
+  loader: () => import('./components/Contacts/Contacts'),
+  loading: function Loading(props) {
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } else {
+      return <div></div>;
+    }
+  }
+})
 
 const App = () => (
   <div>
-    <Header />
-    <Intro />
-    <AboutMe />
-    <Skills />
-    <Education />
-    <Projects />
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
-    <h1 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste dicta cupiditate vitae accusamus sed laudantium reprehenderit similique, impedit unde, pariatur soluta. Laborum vel, omnis voluptate cum neque excepturi debitis.</h1>
+    <LoadableHeader />
+    <LoadableIntro />
+    <LoadableAboutMe />
+    <LoadableSkills />
+    <LoadableEducation />
+    <LoadableProjects />
+    <LoadableContacts />
   </div>
 );
 
