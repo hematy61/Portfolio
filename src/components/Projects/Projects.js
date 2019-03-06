@@ -44,6 +44,22 @@ const Projects = () => (
       </div>
     </div>
 
+    <div className={card}>
+      <div className={card_image_container}>
+        <a href="https://github.com/hematy61/Notes-node-app" target='_blank' >
+          <img src={require('./note-node-app.png')} alt="note node app command line snapshot" />
+        </a>
+      </div>
+      <div className={subtitle}>
+        <h1>Note Node App</h1>
+        <h4>Node.js, Yargs, Chalk</h4>
+        <p>A simple NodeJS Note app which is taking inputs from command line</p>
+        <p>Using Yargs and Chalk</p>
+        <p>Can take notes from command line and save them as a json file</p>
+        <p>Edit, list all notes or find a specific note and remove a note</p>
+      </div>
+    </div>
+
   </section>
 );
 

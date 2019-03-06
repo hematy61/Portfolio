@@ -33,6 +33,9 @@ import YarnIcon from './YarnSVGIcon';
 import SassSVGIcon from './SassSVGIcon';
 import BootstrapSVGIcon from './BootstrapSVGIcon';
 import BootstrapSVGIconMobile from './BootstrapSVGIconMobile';
+import NodeIcon from './NodejsSVGIcon';
+import ExpressIcon from "./ExpressSVGIcon";
+import MongoDBIcon from "./MongodbSVGIcon";
 
 
 const Skills = () => (
@@ -126,6 +129,27 @@ const Skills = () => (
     <div className={bouncing_jitter_fix} >
       <div className={card} >
         <BabelIcon className={`${icon} ${babel}`} />
+        <h3></h3>
+      </div>
+    </div>
+
+    <div className={bouncing_jitter_fix} >
+      <div className={card} >
+        <NodeIcon className={`${icon}`} />
+        <h3></h3>
+      </div>
+    </div>
+    
+    <div className={bouncing_jitter_fix} >
+      <div className={card} >
+        <ExpressIcon className={`${icon}`} />
+        <h3></h3>
+      </div>
+    </div>
+    
+    <div className={bouncing_jitter_fix} >
+      <div className={card} >
+        <MongoDBIcon className={`${icon}`} />
         <h3></h3>
       </div>
     </div>
