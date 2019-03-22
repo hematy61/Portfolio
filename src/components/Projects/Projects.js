@@ -13,7 +13,9 @@ const Projects = () => (
       <div className={card_image_container}>
         <div className={project_card_overlay}>
         </div>
-        <img src={require('./portfolioWeb.gif')} alt="my portfolio website snapshot"/>
+        <a href="https://github.com/hematy61/Portfolio" target='_blank' >
+          <img src={require('./portfolioWeb.gif')} alt="my portfolio website snapshot"/>
+        </a>
       </div>
       <div className={subtitle}>
         <h1>My Portfolio</h1>
