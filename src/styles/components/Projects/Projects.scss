@@ -57,7 +57,19 @@
   p {
     margin: 0;
   }
-  a {
-    text-decoration: none;
-  }
 }
+
+a {
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: #2f98b7;
+}
+
+a:hover {
+  color: #fb7070;
+}
+
+
