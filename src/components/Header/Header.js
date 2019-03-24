@@ -40,7 +40,7 @@ class Header extends Component {
                 duration={500}
               >
                 <h1 className={header_brand_title}>Mo Hemati</h1>
-                <h1 className={header_brand_subtitle}>Front-End Web Developer</h1>
+                <h1 className={header_brand_subtitle}>Full Stack Web Developer</h1>
               </Link>
             </div>
 
