@@ -33,3 +33,21 @@
   height: 5rem;
   width: 5rem;
 }
+.resume {
+  position: relative;
+  right: auto;
+  font-weight: 400;
+  color: #4c4c4c;
+  display: flex;
+  padding: 1rem;
+  h2 {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resume {
+    position: absolute;
+    top: 20vh;
+  }
+}

@@ -16,7 +16,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
@@ -49,9 +50,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
         ]
       }
     ]

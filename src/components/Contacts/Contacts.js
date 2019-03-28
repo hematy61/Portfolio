@@ -6,13 +6,16 @@ import {
   github_logo,
   stackOverflow_logo,
   linkedin_logo,
-  Email_icon
+  Email_icon,
+  resume
 } from "../../styles/components/Contacts/Contacts.scss";
 import TwitterLogo from './TwitterSVGIcon';
 import StackOverflowSVGIcon from './StackoverflowSVGIcon';
 import GithubSVGIcon from "../Skills/GithubSVGIcon";
 import LinkedinSVGIcon from './LinkedinSVGIcon';
 import EmailSVGIcon from "./EmailSVGIcon";
+import Resume from "./resume.pdf";
+import ResumeSVGIcon from "./resumeSVGIcon";
 
 
 const Contacts = () => (
@@ -42,7 +45,12 @@ const Contacts = () => (
         <EmailSVGIcon className={Email_icon}/>
       </a>
     </div>
-
+    <div className={resume}>
+      <h2>Download my Resume</h2>
+      <a href={Resume} target='_blank' >
+        <ResumeSVGIcon className={Email_icon}/>
+      </a>
+    </div>
     
   </section>
 );
