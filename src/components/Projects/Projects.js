@@ -19,6 +19,7 @@ const Projects = () => (
       </div>
       <div className={subtitle}>
         <h1>My Portfolio</h1>
+        <h4><a href="https://github.com/hematy61/Portfolio" target='_blank' >Checkout GitHub Repository</a></h4>
         <h4>React, Webpack 4, Babel, Autoprefixer, SASS, React Scroll, React Loadable</h4>
         <p>A responsive design for desktop and mobile</p>
         <p>Mobile first design</p>
@@ -41,6 +42,7 @@ const Projects = () => (
       </div>
       <div className={subtitle}>
         <h1>TV Package Configurator</h1>
+        <h4><a href="https://github.com/hematy61/react-tv-package-configurator" target='_blank' >Checkout GitHub Repository</a></h4>
         <h4>React ( Create-react-app )</h4>
         <p>An internal app for call center representatives to be able to make changes to customers' TV package</p>
       </div>
@@ -54,6 +56,7 @@ const Projects = () => (
       </div>
       <div className={subtitle}>
         <h1>Note Node App</h1>
+        <h4><a href="https://github.com/hematy61/Notes-node-app" target='_blank' >Checkout GitHub Repository</a></h4>
         <h4>Node.js, Yargs, Chalk</h4>
         <p>A simple NodeJS Note app which is taking inputs from command line</p>
         <p>Using Yargs and Chalk</p>
@@ -70,6 +73,7 @@ const Projects = () => (
       </div>
       <div className={subtitle}>
         <h1>Weather Node and Express App</h1>
+        <h4><a href="https://github.com/hematy61/weather-node-web-server-app" target='_blank' >Checkout GitHub Repository</a></h4>
         <h4><a href="https://mhemati-weather-node-app.herokuapp.com" target='_blank' >Click here to see it in action</a></h4>
         <h4>NodeJS, Express, handlebars, request, hbs, env-cmd</h4>
         <p>
@@ -82,6 +86,24 @@ const Projects = () => (
         <p>Back-end HTTP requests are deployed through 'request' npm package</p>
         <p>Front-end HTTP requests are deployed through Fetch API and Promises </p>
         <p>Deployed on Heroku</p>
+      </div>
+    </div>
+
+    <div className={card}>
+      <div className={card_image_container}>
+        <a href="https://github.com/hematy61/MarketCircle_MockUp" target='_blank' >
+          <img src={require('./MarketCircle_MockUp.png')} alt="Market Circle Mockup snapshot" />
+        </a>
+      </div>
+      <div className={subtitle}>
+        <h1>One page Responsive Design</h1>
+        <h4><a href="https://github.com/hematy61/MarketCircle_MockUp" target='_blank' >Checkout GitHub Repository</a></h4>
+        <h4><a href="./MarketCircle_MockUp/index.html" target='_blank' >Click here to see it in action</a></h4>
+        <h4>React, react scroll, normalize, Babel, Autoprefixer, SASS, Babel plugins, Webpack, Webpack dev server</h4>
+        <p>
+          This is a responsive page based on a mock up that I have done for Market Circle co.
+        </p>
+        
       </div>
     </div>
 
