@@ -4,6 +4,8 @@ import loadable from 'react-loadable';
 import 'normalize.css';
 import './styles/base/base.scss';
 
+// using react-loadable to split the components to small chunks. Header component is going to be imported
+// asynchronously with loadable library
 const LoadableHeader = loadable({
   loader: () => import('./components/Header/Header'),
   loading: function Loading(props) {
