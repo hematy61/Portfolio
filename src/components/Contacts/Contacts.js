@@ -14,7 +14,7 @@ import StackOverflowSVGIcon from './StackoverflowSVGIcon';
 import GithubSVGIcon from "../Skills/GithubSVGIcon";
 import LinkedinSVGIcon from './LinkedinSVGIcon';
 import EmailSVGIcon from "./EmailSVGIcon";
-import Resume from "./resume.pdf";
+import Resume from "./Resume.pdf";
 import ResumeSVGIcon from "./resumeSVGIcon";
 
 
