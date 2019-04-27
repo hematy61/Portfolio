@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import loadable from 'react-loadable';
 import 'normalize.css';
@@ -6,27 +6,9 @@ import './styles/base/base.scss';
 
 // using react-loadable to split the components to small chunks. Header component is going to be imported
 // asynchronously with loadable library
-const LoadableHeader = loadable({
-  loader: () => import('./components/Header/Header'),
-  loading: function Loading(props) {
-    if (props.error) {
-      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
-    } else {
-      return <div></div>;
-    }
-  }
-});
+import LoadableHeader from "./components/Header/Header";
+import LoadableIntro from './components/Intro/Intro'
 
-const LoadableIntro = loadable({
-  loader: () => import('./components/Intro/Intro'),
-  loading: function Loading(props) {
-    if (props.error) {
-      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
-    } else {
-      return <div></div>;
-    }
-  }
-})
 
 const LoadableAboutMe = loadable({
   loader: () => import('./components/AboutMe/AboutMe'),
@@ -83,17 +65,54 @@ const LoadableContacts = loadable({
   }
 })
 
-const App = () => (
-  <div>
-    <LoadableHeader />
-    <LoadableIntro />
-    <LoadableAboutMe />
-    <LoadableSkills />
-    <LoadableEducation />
-    <LoadableProjects />
-    <LoadableContacts />
-  </div>
-);
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      loaded: false
+    }
+  }
+  
+  componentDidMount(){
+    const element = document.querySelectorAll('#introLoading img')[0]
+    console.log(element)
+    element.addEventListener('load', () => this.setState({loaded: true}))
+  }
+
+  render(){
+    return (
+      <div>
+        <div id="introLoading">
+          <LoadableHeader />
+          <LoadableIntro />
+        </div>
+        {this.state.loaded && (
+          <div>
+            <LoadableAboutMe />
+            <LoadableSkills />
+            {/* <LoadableEducation /> */}
+            <LoadableProjects />
+            <LoadableContacts />
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+// const App = () => (
+//   <div>
+//     <LoadableHeader />
+//     <LoadableIntro />
+//     <Suspense fallback={<div>Loading ..... </div>}>
+//       <LoadableAboutMe />
+//       <LoadableSkills />
+//       <LoadableEducation />
+//       <LoadableProjects />
+//       <LoadableContacts />
+//     </Suspense>
+    
+//   </div>
+// );
 
 window.addEventListener('load', () => {
   ReactDOM.render(

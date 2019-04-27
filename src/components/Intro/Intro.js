@@ -8,7 +8,7 @@ import {
   fullscreen_background
 } from '../../styles/components/Intro/Intro.scss';
 import background from './background.png';
-import goDown from "./down.svg";
+import DownSVGIcon from "./down";
 import { Link } from "react-scroll";
 
 
@@ -33,7 +33,7 @@ const Intro = () => (
                 smooth={true} 
                 duration={500}
               >
-              <img src={goDown} alt="go down to about me"/>
+              <DownSVGIcon className={intro_scroll}/>
           </Link>
         </div>
         <img src={background} className={fullscreen_background} alt="Mo Hemati background image"/>
