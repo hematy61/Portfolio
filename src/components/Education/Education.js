@@ -2,14 +2,14 @@ import React from "react";
 import { 
   education_container,
   education_card,
-  icon,
+  // icon,
   university,
-  content,
+  // content,
   card_container
 } from "../../styles/components/Education/Education.scss";
-import FreeCodeCampIcon from "./FreeCodeCampSVGIcon";
-import UdemyIcon from "./UdemySVGIcon";
-import LyndaIcon from "./LyndaSVGIcon";
+// import FreeCodeCampIcon from "./FreeCodeCampSVGIcon";
+// import UdemyIcon from "./UdemySVGIcon";
+// import LyndaIcon from "./LyndaSVGIcon";
 
 const Education = () => (
   <section id='education' className={education_container}>
@@ -23,7 +23,7 @@ const Education = () => (
       </div>
     </div>
 
-    <div className={card_container}>
+    {/* <div className={card_container}>
       <div className={`${education_card} ${content}`}>
         <FreeCodeCampIcon className={icon} />
         <h1>Responsive Web Design Certification</h1>
@@ -81,7 +81,7 @@ const Education = () => (
         <p>Finished</p>
         <p>By: Christina Truong</p>
       </div>
-    </div>
+    </div> */}
 
   </section>
 );

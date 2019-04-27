@@ -75,7 +75,6 @@ class App extends React.Component{
   
   componentDidMount(){
     const element = document.querySelectorAll('#introLoading img')[0]
-    console.log(element)
     element.addEventListener('load', () => this.setState({loaded: true}))
   }
 
@@ -90,11 +89,13 @@ class App extends React.Component{
           <div>
             <LoadableAboutMe />
             <LoadableSkills />
-            {/* <LoadableEducation /> */}
+            <LoadableEducation />
             <LoadableProjects />
             <LoadableContacts />
           </div>
         )}
+        
+ 
       </div>
     )
   }
