@@ -67,6 +67,13 @@
   // border: 5px solid black;
   height: 3vh;
   justify-items: center;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
   a {
     display: flex;
     justify-content: center;
@@ -134,9 +141,6 @@
       padding-bottom: 0;
     }
   }
-  .intro_scroll {
-    background: white;
-  }
 
   .fullscreen_background {
     display: block;
@@ -169,11 +173,6 @@
       padding: 0;
     }
   }
-  .intro_scroll {
-    img {
-      right: 7rem;
-    }
-  }
 }
 /***********************************************************************************************/
 /************************* Between 900px and 1199px and landscape ******************************/
@@ -200,9 +199,6 @@
       font-size: 8vw;
       padding-bottom: 0;
     }
-  }
-  .intro_scroll {
-    background: white;
   }
   .fullscreen_background {
     display: block;
@@ -256,9 +252,6 @@
       font-size: 81.92px;
       padding-bottom: 0;
     }
-  }
-  .intro_scroll {
-    background: white;
   }
   .fullscreen_background {
     display: block;

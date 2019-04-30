@@ -9,7 +9,9 @@ import {
 } from '../../styles/components/Intro/Intro.scss';
 import background from './background.png';
 import DownSVGIcon from "./down";
+import WaiveSVGIcon from "./waive";
 import { Link } from "react-scroll";
+import { relative } from 'path';
 
 
 const Intro = () => (
@@ -37,6 +39,9 @@ const Intro = () => (
           </Link>
         </div>
         <img src={background} className={fullscreen_background} alt="Mo Hemati background image"/>
+        <div style={{zIndex: '-10', position: 'relative', bottom: 0, width: '100vw', maxWidth: '1200px', overflow: 'hidden'}}>
+          <WaiveSVGIcon />
+        </div>
       </div>
       <div className={overlay}></div>
     </section>
