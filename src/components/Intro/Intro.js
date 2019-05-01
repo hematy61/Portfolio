@@ -11,7 +11,6 @@ import background from './background.png';
 import DownSVGIcon from "./down";
 import WaiveSVGIcon from "./waive";
 import { Link } from "react-scroll";
-import { relative } from 'path';
 
 
 const Intro = () => (
