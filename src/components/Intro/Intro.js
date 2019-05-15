@@ -38,7 +38,7 @@ const Intro = () => (
           </Link>
         </div>
         <img src={background} className={fullscreen_background} alt="Mo Hemati background image"/>
-        <div style={{zIndex: '-10', position: 'relative', bottom: 0, width: '100vw', maxWidth: '1200px', overflow: 'hidden'}}>
+        <div style={{zIndex: '-10', position: 'relative', bottom: 0, width: '100vw', maxWidth: '1200px'}}>
           <WaiveSVGIcon />
         </div>
       </div>
