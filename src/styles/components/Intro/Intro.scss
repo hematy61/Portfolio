@@ -1,19 +1,20 @@
-
-.intro {
+.intro{
   display: flex;
+  // border: 5px solid green;
   flex-direction: column;
   align-items: center;
-  // border: 5px solid green;
-  height: calc(100vh - 8rem);
-  padding-top: 8rem;
+  height: calc(100vh - 15rem);
+  margin-top: 8rem;
   color: #444444;
 }
-.intro_content {
+
+.intro_content{
   // border: 5px solid rgb(206, 75, 70);
-  height: 80vh;
-  padding: 10rem 0 0 0;
+  padding: 2rem 0 0 0;
   animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
   opacity: 0;
+  height: calc(100vh - 11rem - 20rem);
+  
   h3 {
     font-size: 1.6rem;
     padding-top: 3rem;
@@ -56,7 +57,6 @@
     opacity: 0;
     transform: translateY(-4rem) scale(.8)
   }
-
   100% {
     opacity: 1;
     transform: none;
@@ -64,36 +64,18 @@
 }
 
 .intro_scroll {
-  // border: 5px solid black;
-  height: 3vh;
-  justify-items: center;
-  display: block;
-  height: 2rem;
-  width: 2rem;
+  // border: 1px solid black;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  max-width: 1200px;
-  a {
-    display: flex;
-    justify-content: center;
-  }
+  // here 2rem is the width of .intro_scroll
+  left: calc(50vw - 2rem);
+  height: 4rem;
+  width: 2rem;
+  padding: 1rem;
   animation: bounce 1s cubic-bezier(0, 0.95, 1, 0.85);
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-delay: 3s;
-  
-  // img {
-  //   display: block;
-  //   height: 4rem;
-  //   width: 4rem;
-  //   position: absolute;
-  //   bottom: 0;
-  //   animation: bounce 1s cubic-bezier(0, 0.95, 1, 0.85);
-  //   animation-direction: alternate;
-  //   animation-iteration-count: infinite;
-  //   animation-delay: 3s;
-  // }
 }
 @keyframes bounce {
   from {
@@ -110,12 +92,19 @@
   // border: 5px solid orange;
   display: none;
 }
-/***********************************************************************************************/
-/************************** greater than 768px and portrait ************************************/
-/***********************************************************************************************/
+
+.waive {
+  position: relative;
+  bottom: 20vh;
+  z-index: -100;
+}
+// /***********************************************************************************************/
+// /************************** greater than 768px and portrait ************************************/
+// /***********************************************************************************************/
 @media (min-width: 768px) and (orientation: portrait){
   .intro {
     align-items: unset;
+    max-width: 1200px;
   }
   .intro_content {
     padding: 9% 0 0 15%;
@@ -146,10 +135,11 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: 17vh;
+    bottom: 6vh;
     z-index: -1;
     max-width: 46vh;
-    animation: fade-slide-down 2s ease-out forwards;
+    animation: fade-slide-down 5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
   }
 
   @keyframes fade-slide-down {
@@ -163,9 +153,9 @@
     }
   }
 }
-/***********************************************************************************************/
-/**************************** less than 899px Landscape ****************************************/
-/***********************************************************************************************/
+// /***********************************************************************************************/
+// /**************************** less than 899px Landscape ****************************************/
+// /***********************************************************************************************/
 @media (max-width: 899px) and (orientation: landscape) {
   .intro_content {
     padding: 0;
@@ -174,12 +164,13 @@
     }
   }
 }
-/***********************************************************************************************/
-/************************* Between 900px and 1199px and landscape ******************************/
-/***********************************************************************************************/
+// /***********************************************************************************************/
+// /************************* Between 900px and 1199px and landscape ******************************/
+// /***********************************************************************************************/
 @media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
   .intro {
     align-items: unset;
+    max-width: 1200px;
   }
   .intro_content{
     padding: 9% 0 0 15%;
@@ -204,10 +195,10 @@
     display: block;
     position: absolute;
     right: 0.7rem;
-    bottom: calc(100vh - 85vh);
+    bottom: calc(100vh - 90vh);
     z-index: -1;
     max-height: 47rem;
-    animation: fade-slide-down 2s ease-out forwards;
+    animation: fade-slide-down 5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
    }
 
    @keyframes fade-slide-down {
@@ -221,15 +212,20 @@
        transform: none;
      }
    }
+
+   .waive{
+     bottom: 190px;
+   }
 }
 
 
-/***********************************************************************************************/
-/************************* greater than 1200px and landscape ***********************************/
-/***********************************************************************************************/
+// /***********************************************************************************************/
+// /************************* greater than 1200px and landscape ***********************************/
+// /***********************************************************************************************/
 @media (min-width: 1200px) and (orientation: landscape){
   .intro {
     align-items: unset;
+    max-width: 1200px;
   }
   .intro_content {
     padding: 9% 0 0 15%;
@@ -253,15 +249,19 @@
       padding-bottom: 0;
     }
   }
+  .intro_scroll{
+    width: 6rem;
+    height: 6rem;
+  }
   .fullscreen_background {
     display: block;
     position: absolute;
     right: calc((100vw - 1200px)/2);
-    bottom: calc(100vh - 85vh);
+    bottom: 5rem;
     z-index: -1;
     max-height: calc(100vh/1.7);
     opacity: 0;
-    animation: fade-slide-down 2s .5s ease-out forwards;
+    animation: fade-slide-down 5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
    }
 
    @keyframes fade-slide-down {
@@ -274,6 +274,9 @@
        opacity: 1;
        transform: none;
      }
+   }
+   .waive{
+     bottom: 250px;
    }
 }
 

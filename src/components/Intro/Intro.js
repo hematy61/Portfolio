@@ -5,7 +5,8 @@ import {
   intro_content, 
   intro_scroll, 
   overlay,
-  fullscreen_background
+  fullscreen_background,
+  waive
 } from '../../styles/components/Intro/Intro.scss';
 import background from './background.png';
 import DownSVGIcon from "./down";
@@ -14,7 +15,7 @@ import { Link } from "react-scroll";
 
 
 const Intro = () => (
-  <div>
+  <div style={{ margin: '0 auto'}}>
     <section className={intro_wrapper} >
       <div className={intro}>
         <div className={intro_content}>
@@ -34,13 +35,13 @@ const Intro = () => (
                 smooth={true} 
                 duration={500}
               >
-              <DownSVGIcon className={intro_scroll}/>
+              <DownSVGIcon />
           </Link>
         </div>
         <img src={background} className={fullscreen_background} alt="Mo Hemati background image"/>
-        <div style={{zIndex: '-10', position: 'relative', bottom: 0, width: '100vw', maxWidth: '1200px'}}>
-          <WaiveSVGIcon />
-        </div>
+      </div>
+      <div className={waive}>
+        <WaiveSVGIcon />
       </div>
       <div className={overlay}></div>
     </section>

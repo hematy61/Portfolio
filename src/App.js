@@ -94,26 +94,10 @@ class App extends React.Component{
             <LoadableContacts />
           </div>
         )}
-        
- 
       </div>
     )
   }
 }
-// const App = () => (
-//   <div>
-//     <LoadableHeader />
-//     <LoadableIntro />
-//     <Suspense fallback={<div>Loading ..... </div>}>
-//       <LoadableAboutMe />
-//       <LoadableSkills />
-//       <LoadableEducation />
-//       <LoadableProjects />
-//       <LoadableContacts />
-//     </Suspense>
-    
-//   </div>
-// );
 
 window.addEventListener('load', () => {
   ReactDOM.render(
