@@ -1,14 +1,18 @@
 @import '../../base/settings.scss';
 
-
+.skills_higher_container{
+  background: #C1C8E4;
+}
 .skills_container {
   // border: 5px solid grey;
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 8rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
@@ -24,6 +28,7 @@
   height: 14rem;
   text-align: center;
   margin: 1rem;
+  background: white;
   h3{
     margin: 1rem 0 0 0;
   }

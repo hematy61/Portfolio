@@ -4,8 +4,9 @@
   flex-direction: column;
   align-items: center;
   height: calc(100vh - 15rem);
-  margin-top: 8rem;
+  padding-top: 8rem;
   color: #444444;
+  margin: 0 auto;
 }
 
 .intro_content{
@@ -220,9 +221,9 @@
 
 
 // /***********************************************************************************************/
-// /************************* greater than 1200px and landscape ***********************************/
+// /************************* Between 1200px and 1590px and landscape *****************************/
 // /***********************************************************************************************/
-@media (min-width: 1200px) and (orientation: landscape){
+@media (min-width: 1200px) and (max-width: 1590px) and (orientation: landscape){
   .intro {
     align-items: unset;
     max-width: 1200px;
@@ -280,3 +281,68 @@
    }
 }
 
+// /***********************************************************************************************/
+// /************************* greater than 1591px and landscape ***********************************/
+// /***********************************************************************************************/
+@media (min-width: 1590px) and (orientation: landscape) {
+    .intro {
+      align-items: unset;
+      max-width: 1200px;
+    }
+
+    .intro_content {
+      padding: 9% 0 0 15%;
+
+      h3 {
+        font-size: 24px;
+
+        span:nth-of-type(2) {
+          font-size: 46.08px;
+        }
+
+        span:nth-of-type(4) {
+          font-size: 35.84px;
+        }
+      }
+
+      h2 {
+        font-size: 30.72px;
+      }
+
+      h1 {
+        font-size: 81.92px;
+        padding-bottom: 0;
+      }
+    }
+
+    .intro_scroll {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    .fullscreen_background {
+      display: block;
+      position: absolute;
+      right: calc((100vw - 1200px)/2);
+      bottom: 5rem;
+      z-index: -1;
+      max-height: calc(100vh/1.7);
+      opacity: 0;
+      animation: fade-slide-down 5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    }
+
+    @keyframes fade-slide-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-4rem)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  .waive{
+    bottom: 550px;
+  }
+}

@@ -1,12 +1,13 @@
 @import "../../base/settings.scss";
 
 .about_me_container {
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 8rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+  background: #5AB9;
 }
 
 .content_frame {
@@ -19,6 +20,7 @@
   font-size: 1.6rem;
   margin-top: 1rem;
   color: $body-main-grey;
+  background: white;
 
   p {
     padding: 4rem 1rem 0 2rem;

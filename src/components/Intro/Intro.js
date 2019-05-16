@@ -15,7 +15,7 @@ import { Link } from "react-scroll";
 
 
 const Intro = () => (
-  <div style={{ margin: '0 auto'}}>
+  <div>
     <section className={intro_wrapper} >
       <div className={intro}>
         <div className={intro_content}>

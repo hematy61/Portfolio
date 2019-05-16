@@ -3,12 +3,13 @@
 
 .education_container {
   // border: 5px solid grey;
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 8rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+  background: #7dca997a;
 }
 .education_card{
   border: 2px solid #fff;
