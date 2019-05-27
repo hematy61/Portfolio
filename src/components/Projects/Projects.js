@@ -37,7 +37,7 @@ const Projects = () => (
     <div className={card}>
       <div className={card_image_container}>
         <a href="https://github.com/hematy61/weather-node-web-server-app" target='_blank' >
-          <img src={require('./weather-app.png')} alt="weather node and express app snapshot" />
+          <img src={require('./weather-app.gif')} alt="weather node and express app snapshot" />
         </a>
       </div>
       <div className={subtitle}>
