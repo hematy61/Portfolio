@@ -1,4 +1,4 @@
-@import '../../base/settings.scss';
+@import "../../base/settings.scss";
 
 .projects_container {
   position: relative;
@@ -62,13 +62,16 @@
   p {
     margin: 0;
   }
+  hr {
+    color: #d6e9566e;
+  }
 }
 
 a {
   text-decoration: none;
 }
 
-
+a,
 a:visited {
   color: #2f98b7;
 }
@@ -76,5 +79,3 @@ a:visited {
 a:hover {
   color: #fb7070;
 }
-
-
