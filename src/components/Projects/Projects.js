@@ -74,13 +74,19 @@ const Projects = () => (
 
         <p>
           The application was for{" "}
-          <a href="https://firstnationsfamilyadvocate.com/">
+          <a href="https://firstnationsfamilyadvocate.com/" target="_blank">
             First Nations Family Advocate Office
           </a>{" "}
           and I managed a team of 3 developers remotely all around the world,
           with slack, Trello, WhatsApp, Telegram, Github, Gitlab, Zoom,{" "}
-          <a href="https://jitsi.org">jitsi</a>.
+          <a href="https://jitsi.org" target="_blank">
+            jitsi
+          </a>
+          , to accomplish the project. I have coded 95% of back-end and
+          collaborated to the front-end code as well.
         </p>
+        <hr />
+
         <h4>Management Key Points:</h4>
         <ul>
           <li>Set up regular meetups</li>
@@ -116,16 +122,20 @@ const Projects = () => (
         <h4>Tech Stacks:</h4>
         <blockquote>
           Angular, TypeScript, Redux, Material Design, NodeJS, Express, MongoDB,
-          Mongoose
+          Mongoose,{" "}
+          <a href="https://pm2.keymetrics.io/" target="_blank">
+            PM2
+          </a>
         </blockquote>
         <hr />
 
         <h4>More Details:</h4>
         <ul>
-          <li>Responsive design</li>
-          <li>Securing the API against XSS, CSRF, Scripting attacks and</li>
+          <li>Responsive Single Page Application (SPA)</li>
+          <li>Securing the API against XSS, CSRF, Scripting attacks</li>
           <li>Hashing sensitive data with bcrypt</li>
-          <li>RUsing SVGs to reduce requests to server</li>
+          <li>Using SVGs to reduce requests to server</li>
+          <li>State Management with Redux</li>
         </ul>
       </div>
     </div>
@@ -193,6 +203,9 @@ const Projects = () => (
       </div>
     </div>
 
+    {/* ---------------------------------------------------------------
+                          TV Package Configurator
+    ---------------------------------------------------------------*/}
     <div className={card}>
       <div className={card_image_container}>
         <a
@@ -212,17 +225,37 @@ const Projects = () => (
             href="https://github.com/hematy61/react-tv-package-configurator"
             target="_blank"
           >
-            Checkout GitHub Repository
+            Source Code
           </a>
         </h4>
-        <h4>React ( Create-react-app )</h4>
+        <hr />
+
+        <h4>
+          <a
+            href="https://hematy61.github.io/react-tv-package-configurator/"
+            target="_blank"
+          >
+            Live Demo
+          </a>
+        </h4>
+        <hr />
+
+        <h4>Tech Stacks:</h4>
+        <blockquote>React</blockquote>
+        <hr />
+
+        <h4>More Details:</h4>
         <p>
-          An internal app for call center representatives to be able to make
-          changes to customers' TV package
+          (The project stopped on its early stages). This is an internal app for
+          call center representatives to be able to make changes to customers'
+          TV packages.
         </p>
       </div>
     </div>
 
+    {/* ---------------------------------------------------------------
+                          Notes Node App
+    ---------------------------------------------------------------*/}
     <div className={card}>
       <div className={card_image_container}>
         <a href="https://github.com/hematy61/Notes-node-app" target="_blank">
@@ -233,20 +266,36 @@ const Projects = () => (
         </a>
       </div>
       <div className={subtitle}>
-        <h1>Note Node App</h1>
+        <h1>Notes</h1>
         <h4>
           <a href="https://github.com/hematy61/Notes-node-app" target="_blank">
-            Checkout GitHub Repository
+            Source Code
           </a>
         </h4>
-        <h4>Node.js, Yargs, Chalk</h4>
-        <p>A simple NodeJS Note app which is taking inputs from command line</p>
-        <p>Using Yargs and Chalk</p>
-        <p>Can take notes from command line and save them as a json file</p>
-        <p>Edit, list all notes or find a specific note and remove a note</p>
+        <hr />
+
+        <h4>Tech Stacks:</h4>
+        <blockquote>Node.js, Yargs, Chalk</blockquote>
+        <hr />
+
+        <h4>More Details:</h4>
+        <ul>
+          <li>
+            A simple NodeJS CLI Based app which is taking inputs from Command
+            Line (CLI)
+          </li>
+          <li>Simplify and beautify inputs and outputs with Yargs and Chalk</li>
+          <li>Can take notes from Command Line and save them as a JSON file</li>
+          <li>
+            Edit, list all notes or find a specific note and remove a note
+          </li>
+        </ul>
       </div>
     </div>
 
+    {/* ---------------------------------------------------------------
+                          Market Circle
+    ---------------------------------------------------------------*/}
     <div className={card}>
       <div className={card_image_container}>
         <a
@@ -266,22 +315,31 @@ const Projects = () => (
             href="https://github.com/hematy61/MarketCircle_MockUp"
             target="_blank"
           >
-            Checkout GitHub Repository
+            Source Code
           </a>
         </h4>
+        <hr />
+
         <h4>
           <a href="./MarketCircle_MockUp/index.html" target="_blank">
-            Click here to see it in action
+            Live Demo
           </a>
         </h4>
-        <h4>
-          React, react scroll, normalize, Babel, Autoprefixer, SASS, Babel
-          plugins, Webpack, Webpack dev server
-        </h4>
-        <p>
-          This is a responsive page based on a mock up that I have done for
-          Market Circle co.
-        </p>
+        <hr />
+
+        <h4>Tech Stacks:</h4>
+        <blockquote>
+          React, normalize, Babel, Autoprefixer, SASS, Webpack
+        </blockquote>
+        <hr />
+
+        <h4>More Details:</h4>
+        <ul>
+          <li>
+            This is a responsive page based on a mock up that I have done for
+            Market Circle co.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
