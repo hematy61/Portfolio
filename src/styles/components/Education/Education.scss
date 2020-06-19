@@ -1,5 +1,4 @@
-@import '../../base/settings.scss';
-
+@import "../../base/settings.scss";
 
 .education_container {
   // border: 5px solid grey;
@@ -11,10 +10,10 @@
   min-height: 90vh;
   background: #7dca997a;
 }
-.education_card{
+.education_card {
   border: 2px solid #fff;
   border-radius: 25px;
-  box-shadow: 0rem 0.125rem 21rem 0rem rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   line-height: 3.5rem;
   color: $body-main-grey;
   padding: 4rem 1rem;
@@ -29,7 +28,7 @@
   z-index: 1;
   background: #fff;
 }
-.card_container{
+.card_container {
   width: 34rem;
   height: 48.8rem;
   padding: 2px;
@@ -40,22 +39,21 @@
 }
 .card_container:hover {
   background-image: linear-gradient(
-    149deg, 
-    #1d516f, 
-    #215a7c, 
-    #338abc 21%, 
-    #348fc3 38%, 
-    #89c341 69%, 
-    #89c341 81%, 
+    149deg,
+    #1d516f,
+    #215a7c,
+    #338abc 21%,
+    #348fc3 38%,
+    #89c341 69%,
+    #89c341 81%,
     #8cba7b
   );
-
 }
 .icon {
   width: 87%;
   max-width: 270px;
   height: 38px;
-  background: #E0E0E0;
+  background: #e0e0e0;
   padding: 2rem;
   border-radius: 20px;
 }

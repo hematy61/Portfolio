@@ -4,7 +4,7 @@ import {
   project_card_overlay,
   card,
   subtitle,
-  card_image_container
+  card_image_container,
 } from "../../styles/components/Projects/Projects.scss";
 const Projects = () => (
   <section id="projects" className={projects_container}>
@@ -199,6 +199,43 @@ const Projects = () => (
             Front-end HTTP requests are deployed through Fetch API and Promises
           </li>
           <li>Deployed on Heroku</li>
+        </ul>
+      </div>
+    </div>
+    {/* ---------------------------------------------------------------
+                          React Weather App
+    ---------------------------------------------------------------*/}
+    <div className={card}>
+      <div className={card_image_container}>
+        <a
+          href="https://github.com/hematy61/weather-node-web-server-app"
+          target="_blank"
+        >
+          <img
+            src={require("./react-weather-app.png")}
+            alt="weather node and express app snapshot"
+          />
+        </a>
+      </div>
+      <div className={subtitle}>
+        <h1>React Weather App</h1>
+        <p>
+          This application has been created within a hiring process in 2 days
+          without giving any design
+        </p>
+        <hr />
+        <h4>Tech Stacks:</h4>
+        <blockquote>
+          React,
+          <a href="https://openweathermap.org"> Open Weather Map API</a>
+        </blockquote>
+        <hr />
+        <h4>More Details:</h4>
+        <ul>
+          <li>
+            A SPA (Single Page Application) that shows today and next five days
+            weather forecast.
+          </li>
         </ul>
       </div>
     </div>

@@ -1,7 +1,7 @@
-@import '../../base/settings.scss';
+@import "../../base/settings.scss";
 
-.skills_higher_container{
-  background: #C1C8E4;
+.skills_higher_container {
+  background: #c1c8e4;
 }
 .skills_container {
   // border: 5px solid grey;
@@ -18,7 +18,7 @@
 .card {
   border: 0 solid #e2e2e2;
   border-radius: 25px;
-  box-shadow: 0rem 0.125rem 16rem 0rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@
   text-align: center;
   margin: 1rem;
   background: white;
-  h3{
+  h3 {
     margin: 1rem 0 0 0;
   }
   .bootstrap_big {
@@ -41,7 +41,7 @@
   }
 }
 .bouncing_jitter_fix:hover {
-  height: 16rem;
+  // height: 16rem;
   overflow: visible;
   .card {
     animation: bounce 0.5s cubic-bezier(0, 0.95, 1, 0.85);
@@ -49,9 +49,9 @@
     animation-iteration-count: infinite;
   }
 }
-.icon{
+.icon {
   // border: 5px solid red;
-  width: 40%;
+  width: 60%;
   border-radius: 5px;
   fill: #1d516f;
 }
@@ -60,7 +60,7 @@
   fill: #f0db4f;
 }
 
-.react{
+.react {
   fill: #62dafa;
 }
 
@@ -107,10 +107,17 @@
 .babel {
   width: 12rem;
 }
-
-.nodejs {
-  // width: 10rem;
-  // margin: 1rem
+.mysql {
+  width: 80%;
+}
+.express {
+  width: 70%;
+}
+.node {
+  width: 80%;
+}
+.mongodb {
+  width: 80%;
 }
 
 @keyframes bounce {
@@ -123,9 +130,8 @@
   }
 }
 
-@media (min-width: 1024px){
-  
-  .card{
+@media (min-width: 1024px) {
+  .card {
     width: 20rem;
     height: 20rem;
     .bootstrap_big {
@@ -136,10 +142,10 @@
       display: none;
     }
   }
-  
+
   .bouncing_jitter_fix:hover {
-    height: 22rem;
-    overflow: visible;
+    // height: 22rem;
+    // overflow: visible;
     .card {
       animation: bounce 0.5s cubic-bezier(0, 0.95, 1, 0.85);
       animation-direction: alternate;

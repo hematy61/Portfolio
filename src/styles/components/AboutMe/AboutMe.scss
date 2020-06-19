@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  background: #5AB9;
+  background: #5ab9;
 }
 
 .content_frame {
@@ -15,7 +15,7 @@
   width: 93vw;
   max-width: 1200px;
   border-radius: 25px;
-  box-shadow: 0rem 0.125rem 21rem 0rem rgba(0, 0, 0, 0.11);
+  box-shadow: 0rem 0.125rem 0.7rem 0rem rgba(0, 0, 0, 0.11);
   line-height: 3.5rem;
   font-size: 1.6rem;
   margin-top: 1rem;
@@ -31,21 +31,21 @@
     border-radius: 5px;
     color: rgb(187, 132, 110);
     padding: 0.7rem 1rem;
-    
-    span:nth-child(1){
+
+    span:nth-child(1) {
       color: rgb(73, 184, 162);
     }
-    span:nth-child(2){
+    span:nth-child(2) {
       color: rgb(213, 213, 165);
     }
-    span:nth-child(3){
+    span:nth-child(3) {
       color: rgb(213, 213, 165);
     }
   }
 }
 
-@media (min-width: 1024px){
-  .content_frame{
+@media (min-width: 1024px) {
+  .content_frame {
     font-size: 2rem;
 
     p {
@@ -53,5 +53,4 @@
       text-align: left;
     }
   }
-  
 }

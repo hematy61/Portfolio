@@ -8,9 +8,9 @@
   justify-content: center;
   min-height: 20vh;
   height: 100vh;
-  background: #D6E9566E;
+  background: #d6e9566e;
 }
-.social_logo{
+.social_logo {
   width: fit-content;
   // border: 1px solid red;
   padding: 1rem;
@@ -26,11 +26,11 @@
 .stackOverflow_logo {
   width: 20rem;
 }
-.linkedin_logo{
+.linkedin_logo {
   width: 5rem;
   height: 5rem;
 }
-.Email_icon{
+.Email_icon {
   height: 5rem;
   width: 5rem;
 }
@@ -42,7 +42,11 @@
   display: flex;
   padding: 1rem;
   h2 {
-    margin-right: 1rem;
+    margin: 0 1rem 0 0;
+  }
+  a {
+    display: flex;
+    align-items: center;
   }
 }
 
