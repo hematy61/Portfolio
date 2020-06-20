@@ -1,88 +1,15 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import loadable from "react-loadable";
 import "normalize.css";
 import "./styles/base/base.scss";
 
-// using react-loadable to split the components to small chunks. Header component is going to be imported
-// asynchronously with loadable library
-import LoadableHeader from "./components/Header/Header";
-import LoadableIntro from "./components/Intro/Intro";
-
-const LoadableAboutMe = loadable({
-  loader: () => import("./components/AboutMe/AboutMe"),
-  loading: function Loading(props) {
-    if (props.error) {
-      return (
-        <div>
-          Error! <button onClick={props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div></div>;
-    }
-  },
-});
-
-const LoadableSkills = loadable({
-  loader: () => import("./components/Skills/Skills"),
-  loading: function Loading(props) {
-    if (props.error) {
-      return (
-        <div>
-          Error! <button onClick={props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div></div>;
-    }
-  },
-});
-
-const LoadableEducation = loadable({
-  loader: () => import("./components/Education/Education"),
-  loading: function Loading(props) {
-    if (props.error) {
-      return (
-        <div>
-          Error! <button onClick={props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div></div>;
-    }
-  },
-});
-
-const LoadableProjects = loadable({
-  loader: () => import("./components/Projects/Projects"),
-  loading: function Loading(props) {
-    if (props.error) {
-      return (
-        <div>
-          Error! <button onClick={props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div></div>;
-    }
-  },
-});
-
-const LoadableContacts = loadable({
-  loader: () => import("./components/Contacts/Contacts"),
-  loading: function Loading(props) {
-    if (props.error) {
-      return (
-        <div>
-          Error! <button onClick={props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div></div>;
-    }
-  },
-});
+import Header from "./components/Header/Header";
+import Intro from "./components/Intro/Intro";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
+import Education from "./components/Education/Education";
+import Projects from "./components/Projects/Projects";
+import Contacts from "./components/Contacts/Contacts";
 
 class App extends React.Component {
   constructor(props) {
@@ -101,16 +28,16 @@ class App extends React.Component {
     return (
       <div>
         <div id="introLoading">
-          <LoadableHeader />
-          <LoadableIntro />
+          <Header />
+          <Intro />
         </div>
         {this.state.loaded && (
           <div>
-            <LoadableAboutMe />
-            <LoadableSkills />
-            <LoadableEducation />
-            <LoadableProjects />
-            <LoadableContacts />
+            <AboutMe />
+            <Skills />
+            <Education />
+            <Projects />
+            <Contacts />
           </div>
         )}
       </div>

@@ -212,7 +212,7 @@ const Projects = () => (
           target="_blank"
         >
           <img
-            src={require("./react-weather-app.png")}
+            src={require("./react-weather-app.jpg")}
             alt="weather node and express app snapshot"
           />
         </a>
